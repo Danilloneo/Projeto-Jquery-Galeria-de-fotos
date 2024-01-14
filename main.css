@@ -1,0 +1,109 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #5f27cd;
+    padding:16px;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase; /*maiuscula*/
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    display: none;
+    background-color: rgba(122, 119, 119, 0.4);
+    padding: 24px 0;
+    text-align: center;
+}
+
+form h2 {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #20da5e;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+
+#botao-cancelar:hover {
+    background-color: rgb(241, 112, 112);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap; /*Quando chegar ao limite crie nova linha*/
+
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none; /*remover bolinha*/
+    position: relative; /*Para que o link não vase deste elemento pai.*/
+    max-height: 280px;
+    overflow-y: hidden; /*Todo conteúdo que ultrapassa não sera exibido fica uniforme*/
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlay-image-link {
+    padding: 16px;
+    background-color: rgba(0,0,0,0.7);/*0.7 70% de transparencia*/
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-image-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-image-link {
+    opacity: 1;
+}
+
+
+.btn-excluir {
+    background-color: red;
+    margin-left: 5px;
+}
+
+.btn-excluir:hover {
+    background-color: rgb(247, 75, 75);
+}
+
+body {
+    background-color: #000;
+}
